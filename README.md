@@ -1,1 +1,4 @@
 # pagina.web.com.la.ele
+Trabalho de Educação Física: Website sobre Voleibol
+
+Criei este site com o objetivo de ensinar as pessoas sobre o vôlei de forma simples e direta, ajudando quem quer entender como o esporte funciona na prática. O projeto explica desde as regras básicas e o sistema de pontuação até os fundamentos técnicos e curiosidades históricas da modalidade. Para montar o conteúdo, pesquisei as regras e a pontuação no regulamento oficial da FIVB (Federação Internacional de Voleibol), tirei as curiosidades de materiais da CBV (Confederação Brasileira de Voleibol) e peguei o vídeo da partida no YouTube. As fotos da quadra e da bola foram retiradas do banco de imagens Unsplash e a formatação do texto usa as fontes padrão do computador (Arial / Segoe UI), garantindo que o site funcione de forma leve e rápida em qualquer tela.
