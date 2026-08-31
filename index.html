@@ -1,41 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Tudo Sobre Vôlei | Regras, Fundamentos e Curiosidades</title>
+    
+    <meta name="description" content="Aprenda tudo sobre voleibol: regras oficiais, fundamentos técnicos, medidas da quadra, sistema de pontuação e curiosidades do esporte.">
+    <meta name="keywords" content="voleibol, regras do volei, fundamentos do volei, medidas da quadra de volei, sistema de pontuacao volei, curiosidades sobre volei, tamanho da quadra de volei, como jogar volei, pontos no volei, tie break volei">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-    <header>
-        <h1><b>Meu blog sobre vôlei</b></h1>
-        <p><b>Por Davi da Rocha Castelan</b></p>
-        <p>Neste blog irei falar sobre as regras, sistema de pontuação, medidas das quadras e fundamentos do vôlei.</p>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mundo do <span>Vôlei</span></h1>
+            <p class="subtitle">O seu portal completo de aprendizado sobre o esporte</p>
+        </div>
     </header>
-    </div>
-    <div>
-    <main>
-        <h2><b>Fundamentos</b></h2>
-        <p>Saque: é o unico momento em que você pode marcar sozinho no vôlei, existem 5 formas, elas são saque por baixo, por cima, flutuante, viagem e híbrido, por baixo é o mais comum para pessoas iniciantes, por cima é um pouco mais avançado onde você joga a bola para cima e ataca e é a porta de entrada para os saques mais difíceis, flutuante é efetuado quando você joga a bola para cima sem giro, causando um efeito que torna a trajetória imprevissível, o viagem é feito quando você joga a bola para frente faz a passada e salta para atacar, híbrido é usado para enganar os adversários, o jogadoz utiliza a linguagem corporal e o lançamento da bola, executa o contato com a mecânica do outro.</p>
-        <p>Recepção: é o ato de receber o saque ou ataque adversário, pode ser usado manchete, toque ou espalmar a bola desde que não conduza.</p>
-        <p>Levantamento: vem depois da recepção, o levantador geralmente é o 2° toque, ele que arma a bola para que um dos pontas, centrais ou oposto ataque.</p>
-        <p>Ataque: quando a bola é levantada pode ser cortada de diversas formas e tempos.</p>
-        <p>Bloqueio: é uma forma de defesa muito eficaz contra as cortadas, pode ser realizada pelos três jogadores da frente da quadra, os jogadores pulam com seus braços esticados e interceptam a bola.</p>
-        <h2><b>Regras</b></h2>
-        <p>Cada equipe tem 3 toques na bola e um jogador não pode tocar duas vezes consecutivas na bola, durante um rally é possível pisar na quadra adversária sem que seja por completo e nem atrapalhe a jogada adversária, por cima só é permitido o bloqueio, o rodízio só é feito quando a equipe recupera o direito de sacar. Essas são algumas regras basícas que você saber para jogar.</p>
-        <h2><b>Sistema de pontuação</b></h2>
-        <p>Uma equipe marca um ponto quando a bola toca o chão da quadra adversária, quando o adversário joga a bola para fora, ou quando o adversário comete uma falta como dar mais de 3 toques, tocar na rede ou cometer erro básico de posicionamento.</p>
-        <p>Melhor de 5 sets (Formato Padrão): Utilizado em ligas profissionais, Superliga, Jogos Olímpicos, Campeonatos Mundiais e nas fases finais. Vence quem ganhar 3 sets.</p>
-        <p>Melhor de 3 sets (Formato Reduzido): Muito comum no Vôlei de Praia, em torneios escolares, universitários, amadores ou em algumas fases de grupos de torneios curtos para evitar o desgaste físico dos atletas. Nesses casos, os dois primeiros sets vão até 21 pontos e o tie-break vai até 15.</p>
-        <h2><b>Quadra</b></h2>
-        <p>A primeira quadra de volêi tinha 15,24 metros por 7,62 e hoje em dia é 18 metros por 9.</p>
-        <h2><b>Curiosidades</b></h2>
-        <p>Invenção do Líbero: A posição foi criada em 1998 para tornar os ralis mais longos e espetaculares, permitindo que especialistas em defesa entrassem no jogo sem gastar substituições regulares.</p>
-        <p>Velocidade da Bola: Os saques mais rápidos do vôlei masculino profissional ultrapassam 130 km/h, dando ao defensor menos de meio segundo para reagir e posicionar o corpo.</p>
-        <p>Origem da Cortada e do Bloqueio: Os fundadores do jogo não previam saques ou ataques fortes. A "cortada" (ataque) e o "bloqueio" foram inventados nas Filipinas em 1916, mudando o esporte para uma dinâmica mais agressiva.</p>
-        <p>Nome Original: O esporte foi criado em 1895 por William G. Morgan com o nome de "Mintonette". O nome "Volleyball" surgiu logo depois, quando um espectador notou que os jogadores rebatiam a bola no ar (volleying).</p>
+
+    <nav class="navbar">
+        <div class="container nav-links">
+            <a href="#regras">Regras</a>
+            <a href="#fundamentos">Fundamentos</a>
+            <a href="#quadra">Quadra</a>
+            <a href="#pontuacao">Pontuação</a>
+            <a href="#curiosidades">Curiosidades</a>
+        </div>
+    </nav>
+
+    <main class="container content">
+        <section id="regras" class="card">
+            <h2>Regras Oficiais</h2>
+            <ul class="custom-list">
+                <li><strong>Jogadores:</strong> Duas equipes de 6 jogadores ativos em quadra.</li>
+                <li><strong>Toques na bola:</strong> Cada equipe tem direito a no máximo 3 toques para passar a bola (o bloqueio não conta).</li>
+                <li><strong>Toques individuais:</strong> É proibido o mesmo jogador dar dois toques seguidos na bola.</li>
+                <li><strong>Rede:</strong> Toques na rede ou invasão por baixo do piso são faltas diretas.</li>
+                <li><strong>Rodízio:</strong> A equipe deve rodar uma posição no sentido horário sempre que recuperar o direito de sacar.</li>
+            </ul>
+        </section>
+
+        <section id="fundamentos" class="card">
+            <h2>Fundamentos Técnicos</h2>
+            <div class="grid-cards">
+                <div class="mini-card">
+                    <h3>Saque</h3>
+                    <p>Golpe inicial que coloca a bola em jogo a partir do fundo da quadra.</p>
+                </div>
+                <div class="mini-card">
+                    <h3>Passe / Manchete</h3>
+                    <p>Técnica de defesa primária para amortecer e controlar o ataque rival.</p>
+                </div>
+                <div class="mini-card">
+                    <h3>Levantamento</h3>
+                    <p>Passe de precisão por cima que armazena a jogada para a cortada.</p>
+                </div>
+                <div class="mini-card">
+                    <h3>Ataque / Cortada</h3>
+                    <p>Golpe potente e descendente projetado para acertar o chão do rival.</p>
+                </div>
+                <div class="mini-card">
+                    <h3>Bloqueio</h3>
+                    <p>Barreira de saltadores junto à rede para interceptar o ataque adversário.</p>
+                </div>
+                <div class="mini-card">
+                    <h3>Defesa</h3>
+                    <p>Recuperação de bolas difíceis que passaram pelo bloqueio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quadra" class="card">
+            <h2>Medidas da Quadra</h2>
+            <p>Dimensões padrão estipuladas pela Federação Internacional de Voleibol (FIVB):</p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Área da Quadra</th>
+                            <th>Medida Oficial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dimensão Total</td>
+                            <td>18m de comprimento por 9m de largura</td>
+                        </tr>
+                        <tr>
+                            <td>Meios-Campos</td>
+                            <td>Dois quadrados de 9m x 9m</td>
+                        </tr>
+                        <tr>
+                            <td>Zona de Ataque</td>
+                            <td>3m de distância da linha central</td>
+                        </tr>
+                        <tr>
+                            <td>Zona de Defesa</td>
+                            <td>6m da linha de ataque à linha de fundo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="pontuacao" class="card">
+            <h2>Sistema de Pontuação</h2>
+            <p>O vôlei utiliza o sistema <em>Rally Point</em> (todas as jogadas valem ponto).</p>
+            <div class="highlight-box">
+                <ul>
+                    <li><strong>Sets 1 ao 4:</strong> Vence quem fizer 25 pontos primeiro (com vantagem mínima de 2 pontos).</li>
+                    <li><strong>5º Set (Tie-break):</strong> Em empate de 2 a 2 nos sets, o desempate vai até 15 pontos (com vantagem mínima de 2 pontos).</li>
+                    <li><strong>Vitória:</strong> A partida é conquistada ao vencer 3 sets (melhor de 5).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="curiosidades" class="card">
+            <h2>Curiosidades e História</h2>
+            <ul class="custom-list">
+                <li>Criado em 1895 por William G. Morgan sob o nome original de <strong>Mintonette</strong>.</li>
+                <li>Os primeiros ataques fortes (cortada) e bloqueios surgiram nas Filipinas, em 1916.</li>
+                <li>A posição do <strong>Líbero</strong> foi introduzida apenas em 1998 para aumentar os ralis de defesa.</li>
+                <li>Um jogador profissional pode saltar até 100 vezes em uma partida intensa de 5 sets.</li>
+            </ul>
+        </section>
     </main>
-    </div>
+
+    <footer class="footer">
+        <p>&copy; Portal Mundo do Vôlei. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
