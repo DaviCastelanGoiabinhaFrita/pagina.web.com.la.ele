@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo do Vôlei</title>
 
-    <!-- Código CSS para adicionar direto na aba/head do documento -->
+    <!-- Código CSS para adicionar direto no head/aba da página -->
     <style>
-        /* CSS Geral e Reset */
+        /* Reset e Estilos Gerais */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
 
         body {
@@ -21,26 +21,26 @@
             padding: 20px;
         }
 
-        /* Utilização da Classe Solicitada */
+        /* Classe principal do Container */
         .conteudo-principal {
             max-width: 900px;
             margin: 0 auto;
             background-color: #ffffff;
-            padding: 25px;
+            padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         h1 {
             color: #004b87;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         h2 {
             color: #0074d9;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 25px;
+            margin-bottom: 12px;
             border-bottom: 2px solid #ffb703;
             padding-bottom: 5px;
         }
@@ -50,13 +50,13 @@
             line-height: 1.6;
         }
 
-        /* Estilização das Mídias */
+        /* Container de Mídias (Divs flexíveis) */
         .midia-container {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
-            margin: 15px 0;
+            margin: 20px 0;
         }
 
         img {
@@ -64,26 +64,42 @@
             height: auto;
             border-radius: 8px;
             max-height: 250px;
+            object-fit: cover;
         }
 
-        iframe {
-            max-width: 100%;
+        /* Moldura de Vídeo Responsivo */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            margin: 20px 0;
             border-radius: 8px;
+            overflow: hidden;
         }
 
-        /* Botão de Like */
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Botão de Curtida */
         .btn-like {
             background-color: #ffb703;
             color: #000;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 1rem;
             font-weight: bold;
-            border-radius: 20px;
+            border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s;
             display: block;
-            margin: 20px auto 0 auto;
+            margin: 25px auto 0 auto;
         }
 
         .btn-like:hover {
@@ -93,50 +109,55 @@
 </head>
 <body>
 
-    <!-- Primeira DIV: Estrutura container do site -->
+    <!-- Primeiura DIV: Container Geral do Site -->
     <div class="conteudo-principal">
         <h1>Portal do Voleibol</h1>
 
-        <!-- Section / Article com os tópicos solicitados -->
+        <!-- Section Principal com o Conteúdo e Tópicos -->
         <section>
             
             <!-- Tópico 1 -->
-            <h2>1. Regras Oficiais</h2>
-            <!-- Primeiro P -->
-            <p>O voleibol é disputado por duas equipes de 6 jogadores cada. O objetivo é fazer a bola passar por cima da rede e tocar o chão da quadra adversária, sendo permitido no máximo três toques por equipe antes de devolver a bola.</p>
+            <h2>1. Regras Oficiais e Funcionamento</h2>
+            <!-- Primeiro Parágrafo -->
+            <p>O voleibol é disputado por duas equipes de 6 jogadores ativos em quadra. O objetivo principal é fazer a bola passar por cima da rede e tocar o piso da quadra adversária, ou fazer a equipe rival errar. Cada time pode dar no máximo 3 toques na bola para enviá-la ao outro lado (sendo que o toque do bloqueio não entra nessa contagem).</p>
 
             <!-- Tópico 2 -->
-            <h2>2. Fundamentos Técnicos</h2>
-            <!-- Segundo P -->
-            <p>Os principais fundamentos do esporte incluem o saque, a manchete, o levantamento, a cortada e o bloqueio. Cada um desempenha um papel essencial no ataque e na defesa da equipe durante o rali.</p>
+            <h2>2. Fundamentos Técnicos Principais</h2>
+            <!-- Segundo Parágrafo -->
+            <p>Os pilares da modalidade envolvem o saque (colocação da bola em jogo), o passe ou manchete (recepção da bola do adversário), o levantamento (preparação de precisão para a cortada), o ataque (golpe potente contra o campo rival) e o bloqueio (barreira armada junto à rede para parar o ataque).</p>
 
-            <!-- Segunda DIV: Container de Mídias (Imagens e Vídeo) -->
+            <!-- Segunda DIV: Imagens da modalidade -->
             <div class="midia-container">
                 <!-- Imagem 1 -->
-                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=500&q=80" alt="Jogo de vôlei">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=500&q=80" alt="Partida de voleibol">
                 
                 <!-- Imagem 2 -->
-                <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=500&q=80" alt="Bola de vôlei na quadra">
+                <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=500&q=80" alt="Bola de voleibol na quadra">
             </div>
 
             <!-- Tópico 3 -->
-            <h2>3. Medidas da Quadra</h2>
-            <!-- Terceiro P -->
-            <p>A quadra oficial de vôlei mede 18 metros de comprimento por 9 metros de largura, sendo dividida ao meio por uma rede cuja altura varia entre 2,43m para partidas masculinas e 2,24m para femininas.</p>
-
-            <!-- Vídeo Incorporado -->
-            <div class="midia-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo sobre vôlei" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <h2>3. Medidas da Quadra Oficial</h2>
+            <!-- Terceiro Parágrafo -->
+            <p>A quadra de vôlei possui formato retangular com dimensões exatas de 18 metros de comprimento por 9 metros de largura, dividida em dois lados quadrados de 9m x 9m. A rede no centro tem altura oficial de 2,43 metros para o naipe masculino e 2,24 metros para o feminino.</p>
 
             <!-- Tópico 4 -->
-            <h2>4. Curiosidades</h2>
-            <!-- Quarto P -->
-            <p>Criado em 1895 por William G. Morgan nos Estados Unidos, o esporte originalmente se chamava "Mintonette". A posição especializada do líbero só foi introduzida oficialmente em 1998 para tornar as defesas mais dinâmicas.</p>
+            <h2>4. Assista a uma Partida Completa</h2>
+            <!-- Quarto Parágrafo (Explicação do vídeo) -->
+            <p>Confira no vídeo abaixo a transmissão oficial completa da partida entre Brasil e Polônia válida pelas quartas de final da Liga das Nações (VNL), demonstrando na prática o ritmo acelerado, saques em alta velocidade e defesas do voleibol profissional de elite.</p>
+
+            <!-- Moldura Responsiva com o Vídeo Incorporado do YouTube -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/iqmX4CfqJII" 
+                    title="Partida de Vôlei: Polônia x Brasil" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
 
         </section>
 
-        <!-- Botão de Like -->
+        <!-- Botão Interativo de Curtir -->
         <button class="btn-like" onclick="alert('Obrigado pelo seu Like!')">👍 Curtir a página</button>
     </div>
 
