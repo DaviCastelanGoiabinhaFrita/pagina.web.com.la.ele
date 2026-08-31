@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo do Vôlei</title>
+    <title>Tudo Sobre Vôlei</title>
 
-    <!-- Código CSS para adicionar direto no head/aba da página -->
+    <!-- Código CSS interno (inserido na aba/head da página) -->
     <style>
-        /* Reset e Estilos Gerais */
+        /* Reset de margens e configuração global de fonte */
         * {
             margin: 0;
             padding: 0;
@@ -16,19 +16,19 @@
         }
 
         body {
-            background-color: #f0f4f8;
-            color: #333;
+            background-color: #eef2f7;
+            color: #2c3e50;
             padding: 20px;
         }
 
-        /* Classe principal do Container */
-        .conteudo-principal {
+        /* Classe principal que centraliza e estiliza o container do site */
+        .card-container {
             max-width: 900px;
             margin: 0 auto;
             background-color: #ffffff;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -40,7 +40,7 @@
         h2 {
             color: #0074d9;
             margin-top: 25px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             border-bottom: 2px solid #ffb703;
             padding-bottom: 5px;
         }
@@ -48,10 +48,11 @@
         p {
             margin-bottom: 15px;
             line-height: 1.6;
+            font-size: 1.05rem;
         }
 
-        /* Container de Mídias (Divs flexíveis) */
-        .midia-container {
+        /* Container para organizar as imagens lado a lado */
+        .galeria-imagens {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
@@ -61,24 +62,23 @@
 
         img {
             max-width: 100%;
-            height: auto;
+            height: 220px;
             border-radius: 8px;
-            max-height: 250px;
             object-fit: cover;
         }
 
-        /* Moldura de Vídeo Responsivo */
-        .video-wrapper {
+        /* Estrutura para deixar o vídeo do YouTube responsivo */
+        .video-box {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
             height: 0;
             margin: 20px 0;
             border-radius: 8px;
             overflow: hidden;
         }
 
-        .video-wrapper iframe {
+        .video-box iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -87,69 +87,71 @@
             border: 0;
         }
 
-        /* Botão de Curtida */
+        /* Estilização do botão de curtir */
         .btn-like {
             background-color: #ffb703;
-            color: #000;
+            color: #000000;
             border: none;
-            padding: 12px 24px;
+            padding: 12px 25px;
             font-size: 1rem;
             font-weight: bold;
             border-radius: 25px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: transform 0.2s, background-color 0.2s;
             display: block;
-            margin: 25px auto 0 auto;
+            margin: 30px auto 0 auto;
         }
 
         .btn-like:hover {
             background-color: #e0a000;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
-    <!-- Primeiura DIV: Container Geral do Site -->
-    <div class="conteudo-principal">
-        <h1>Portal do Voleibol</h1>
+    <!-- Primeira DIV: Estrutura principal do projeto -->
+    <div class="card-container">
+        <h1>Guia Completo do Voleibol</h1>
 
-        <!-- Section Principal com o Conteúdo e Tópicos -->
+        <!-- Section: Agrupa os 4 tópicos explicativos -->
         <section>
             
-            <!-- Tópico 1 -->
-            <h2>1. Regras Oficiais e Funcionamento</h2>
-            <!-- Primeiro Parágrafo -->
-            <p>O voleibol é disputado por duas equipes de 6 jogadores ativos em quadra. O objetivo principal é fazer a bola passar por cima da rede e tocar o piso da quadra adversária, ou fazer a equipe rival errar. Cada time pode dar no máximo 3 toques na bola para enviá-la ao outro lado (sendo que o toque do bloqueio não entra nessa contagem).</p>
+            <!-- Tópico 1: Fundamentos -->
+            <h2>1. Fundamentos Técnicos</h2>
+            <!-- 1º Parágrafo -->
+            <p>Os fundamentos são os movimentos básicos para jogar vôlei: o saque inicia a jogada; a manchete e o toque servem para recepcionar e levantar a bola; a cortada é o ataque para marcar pontos; e o bloqueio é a primeira linha de defesa junto à rede.</p>
 
-            <!-- Tópico 2 -->
-            <h2>2. Fundamentos Técnicos Principais</h2>
-            <!-- Segundo Parágrafo -->
-            <p>Os pilares da modalidade envolvem o saque (colocação da bola em jogo), o passe ou manchete (recepção da bola do adversário), o levantamento (preparação de precisão para a cortada), o ataque (golpe potente contra o campo rival) e o bloqueio (barreira armada junto à rede para parar o ataque).</p>
+            <!-- Tópico 2: Curiosidades -->
+            <h2>2. Curiosidades do Esporte</h2>
+            <!-- 2º Parágrafo -->
+            <p>Criado em 1895 por William G. Morgan nos EUA, o vôlei originalmente se chamava "Mintonette". Além disso, a posição do líbero só foi criada em 1998 para tornar as partidas mais longas e dinâmicas, e um atleta de alto nível chega a saltar cerca de 100 vezes por partida.</p>
 
-            <!-- Segunda DIV: Imagens da modalidade -->
-            <div class="midia-container">
+            <!-- Segunda DIV: Agrupamento de imagens -->
+            <div class="galeria-imagens">
                 <!-- Imagem 1 -->
-                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=500&q=80" alt="Partida de voleibol">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=500&q=80" alt="Partida de voleibol em andamento">
                 
                 <!-- Imagem 2 -->
-                <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=500&q=80" alt="Bola de voleibol na quadra">
+                <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=500&q=80" alt="Bola de vôlei na quadra">
             </div>
 
-            <!-- Tópico 3 -->
-            <h2>3. Medidas da Quadra Oficial</h2>
-            <!-- Terceiro Parágrafo -->
-            <p>A quadra de vôlei possui formato retangular com dimensões exatas de 18 metros de comprimento por 9 metros de largura, dividida em dois lados quadrados de 9m x 9m. A rede no centro tem altura oficial de 2,43 metros para o naipe masculino e 2,24 metros para o feminino.</p>
+            <!-- Tópico 3: Sistema de Pontuação -->
+            <h2>3. Sistema de Pontuação</h2>
+            <!-- 3º Parágrafo -->
+            <p>As partidas são disputadas em melhor de 5 sets. Os quatro primeiros sets vão até 25 pontos (com necessidade de abrir 2 pontos de vantagem). Caso haja empate em 2 a 2, é jogado o 5º set (tie-break), que vai até 15 pontos, mantendo a regra da diferença mínima de 2 pontos.</p>
 
-            <!-- Tópico 4 -->
-            <h2>4. Assista a uma Partida Completa</h2>
-            <!-- Quarto Parágrafo (Explicação do vídeo) -->
-            <p>Confira no vídeo abaixo a transmissão oficial completa da partida entre Brasil e Polônia válida pelas quartas de final da Liga das Nações (VNL), demonstrando na prática o ritmo acelerado, saques em alta velocidade e defesas do voleibol profissional de elite.</p>
+            <!-- Tópico 4: Regras Básicas -->
+            <h2>4. Regras Principais</h2>
+            <!-- 4º Parágrafo -->
+            <p>Cada equipe joga com 6 atletas em quadra e pode dar no máximo 3 toques na bola antes de passá-la ao adversário. É proibido que o mesmo jogador dê dois toques seguidos, assim como é falta tocar na rede ou invadir o campo adversário por baixo dela.</p>
 
-            <!-- Moldura Responsiva com o Vídeo Incorporado do YouTube -->
-            <div class="video-wrapper">
+            <!-- Vídeo de uma partida de vôlei -->
+            <h2>Vídeo: Assista a uma Partida na Prática</h2>
+            <div class="video-box">
                 <iframe 
                     src="https://www.youtube.com/embed/iqmX4CfqJII" 
-                    title="Partida de Vôlei: Polônia x Brasil" 
+                    title="Vídeo de partida de vôlei" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
@@ -157,8 +159,8 @@
 
         </section>
 
-        <!-- Botão Interativo de Curtir -->
-        <button class="btn-like" onclick="alert('Obrigado pelo seu Like!')">👍 Curtir a página</button>
+        <!-- Botão de Like -->
+        <button class="btn-like" onclick="alert('Você curtiu esta página sobre vôlei!')">👍 Curtir a página</button>
     </div>
 
 </body>
